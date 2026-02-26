@@ -3,6 +3,14 @@
     "version": "1.0.0",
     "description": "WhatsApp runtime library for inbound/outbound messaging via BullMQ",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GadCoder/whatsapp-gateway.git"
+    },
+    "bugs": {
+        "url": "https://github.com/GadCoder/whatsapp-gateway/issues"
+    },
+    "homepage": "https://github.com/GadCoder/whatsapp-gateway#readme",
     "type": "module",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
