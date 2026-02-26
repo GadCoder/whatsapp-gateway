@@ -1,0 +1,39 @@
+{
+    "name": "@gadcoder/whatsapp-gateway",
+    "version": "1.0.0",
+    "description": "WhatsApp runtime library for inbound/outbound messaging via BullMQ",
+    "license": "MIT",
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "!dist/tests",
+        "!dist/tests/**",
+        "README.md"
+    ],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "scripts": {
+        "build": "tsc",
+        "test": "npm run build && node --test dist/tests/*.test.js"
+    },
+    "dependencies": {
+        "bullmq": "^5.58.0",
+        "pino": "^9.6.0",
+        "qrcode-terminal": "^0.12.0",
+        "whatsapp-web.js": "^1.34.6"
+    },
+    "devDependencies": {
+        "@types/node": "^20.14.11",
+        "@types/qrcode-terminal": "^0.12.2",
+        "typescript": "^5.5.3"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}

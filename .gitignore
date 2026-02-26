@@ -1,0 +1,12 @@
+node_modules/
+*.tgz
+npm-debug.log*
+.DS_Store
+
+# WhatsApp Web local auth/session artifacts
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Local env files
+.env
+.env.*
